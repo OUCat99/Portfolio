@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <script 
+      src="jquery-3.6.4.min.js">
+    </script>
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script 
+      src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js">
+    </script>
     <link rel="stylesheet" href="https://use.typekit.net/wfy3mbw.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,125 +18,145 @@
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Catherine Penrod UX/UI Design Portfolio</title>
-</head>
+  </head>
 
-<body>
-<nav>
-    <div class="block_element">
-        <img src="images\Giphy.png" alt="Resume download"><div class="inline-block"></div>
-         <img src="images\Gmail.png" alt="Gmail"><div class="inline-block"></div>
-        <img src="images\Dribble.png" alt="dribble"><div class="inline-block"></div>
-         <img src="images\Linkedin.png" alt="Linkedin"><div class="inline-block"></div> 
-     </div>
-</nav>
-   
-<h1>catherine penrod</h1>
-   
-<h4>researcher  |  UX/UI designer  |  communication expert</h4>
-   
-<section id="opening">
-    <div class="grid-container">
-        <div class="grid-item"><img id="cat" src="images\penrod.jpg" alt="Image of Catherine Penrod">
-        </div>
-        <div class="grid-item"><p id="quote">"My passion is using research, analysis, and design to solve complex business problems to create value."</p>
-        </div>
-    </div>
-</section>
-
-<section id="resumeAbout">
-    <div class="block_element2">
+  <body>
+  <!--NavBar-->
+    <nav>
+      <div class="block_element">
+          <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing"><img src="images\Giphy.png" alt="Resume download"></a><div class="inline-block"></div>
+          <a href="mailto:cat.penrod17@gmail.com"></a><img src="images\Gmail.png" alt="Gmail"></a><div class="inline-block"></div>
+          <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/"><img src="images\Linkedin.png" alt="Linkedin"></a><div class="inline-block"></div> 
+      </div>
+    </nav>
+  
+    <!--Title Block-->   
+    <h1>catherine penrod</h1>
+    <h4>researcher  |  UX/UI designer  |  communication expert</h4>
+  
+  <!--Opening Block-->   
+    <section id="opening">
+      <div class="grid-container">
+          <div class="grid-item"><img id="cat" src="images\penrod.jpg" alt="Image of Catherine Penrod">
+          </div>
+          <div class="grid-item"><p id="quote">"My passion is using research, analysis, and design to solve complex business problems to create value."</p>
+          </div>
+      </div>
+    </section>
+ 
+  <!--Actions-->
+    <section id="resumeAbout">
+    
+      <div class="block_element2">
+        
         <div class="inline-block2">
-            <h4>download resume</h4>
+          <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing"><h4>view resume</h4></a>
         </div>
         <div class="inline-block2">
             <img id="dwchevron" src="images/chevron.down.png" alt="Downward chevron">
         </div>
+        
         <div class="inline-block2">
-            <h4>about cat</h4>
+          <div class="popup" onclick="myFunction()"><h4>about cat</h4>
+            <span class="popuptext" id="myPopup">I am a User Experience Designer with a background in communication and business. I've spent the last 20 years helping others identify and solve business problems. I truly enjoy the interplay of research, analysis, and creativity that takes place in UX.  
+            <br>
+            <br>I like playing an active role in decision-making,  staying busy, experiencing variety, learning something new everyday, and overcoming challenges.
+            <br>
+            <br>Personally, I am a mom to two amazing daughters, and a wife to a husband who is my biggest champion. I enjoy the beauty of design that is all around us and believe in seeing the potential in everyone and everything. 
+            <br>
+            <br>I am also a bit of a grammar nerd.  </span>
+          </div>
         </div>
-        <div class="inline-block2">
-        <img id="dwchevron2" src="images/chevron.down.png" alt="Downward chevron">
+          <div class="inline-block2">
+            <img id="dwchevron2" src="images/chevron.down.png" alt="Downward chevron">
+          </div>
+          <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+          </script>  
         </div>
-    </div>
-</section>
-
-<section id="portfolio">
-    <h3>portfolio</h3>
-</section>
-
-<div class="container-fluid">
-    <div class="row">
       
-        <!-- Flew the Coop Card-->
+      </div>
+
+    </section>
+
+  <!--Portfolio-->
+
+  <section id="portfolio">
+      <h3>portfolio</h3>
+  </section>
+
+  <div class="container-fluid">
+      <div class="row">
+        
+          <!-- Flew the Coop Card-->
+          <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+          <div class="card">
+            <img src="images/lady_on_swing_2.png" class="card-img-top" alt="Woman on a swing">
+            <div class="card-body">
+              <h2 class="card-title">flew the coop</h2>
+              <p class="card-text">An app that allows users to build a robust profile - travel method, cuisines, entertainment, activities, etc. - then select cities and dates to receive customized trip itineraries.</p>
+              <a href="#" class="btn btn-primary">escape now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- What's Cook'N Card-->   
         <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-          <img src="images/lady_on_swing_2.png" class="card-img-top" alt="Woman on a swing">
-          <div class="card-body">
-            <h2 class="card-title">flew the coop</h2>
-            <p class="card-text">An app that allows users to build a robust profile that includes items like - preferred method of transportation, cuisine types, entertainment preferences; activity preferences; etc. From the preferences, users can select cities and dates and receive customized trip itineraries.</p>
-            <a href="#" class="btn btn-primary">escape now</a>
+          <div class="card">
+            <img src="images/What's_Cook'N.png" class="card-img-top" alt="Logo for What's Cook'N App">
+            <div class="card-body">
+              <h2 class="card-title">what's cook'n</h2>
+              <p class="card-text">An app that allows users to catalog the food items they have at home and receive recipes that only use those ingredients. Users may also view all recipes with missing ingredients identified.</p>
+              <a href="#" class="btn btn-primary">get cook'n</a>
+            </div>
           </div>
         </div>
-      </div>
+    
+        <!-- FTC.gov Card-->
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+          <div class="card">
+            <img src="images/FTC.png" class="card-img-top" alt="FTC Seal">
+            <div class="card-body">
+              <h2 class="card-title">ftc.gov redesign</h2>
+              <p class="card-text">Redesign of the FTC.gov website to improve the user experience. Website navigation and responsive design elements were the focus for the redesign with particular attention paid to consumer actions.</p>
+              <a href="#" class="btn btn-primary">be protected</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- ACHS Card -->
+        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+          <div class="card">
+            <img src="images/ACHS.png" class="card-img-top" alt="Orange Tabby Cat">
+            <div class="card-body">
+              <h2 class="card-title">ACHS redesign</h2>
+              <p class="card-text">Redesign the ACHS website to improve user experience and highlight user actions of donating and volunteering and to improve responsive design elements.</p>
+              <a href="#" class="btn btn-primary">start helping</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- Close row -->
+    </div><!-- Close container fluid -->
 
-      <!-- What's Cook'N Card-->   
-      <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-          <img src="images/What's_Cook'N.png" class="card-img-top" alt="Logo for What's Cook'N App">
-          <div class="card-body">
-            <h2 class="card-title">what's cook'n</h2>
-            <p class="card-text">An app that allows users to catalog the food items they have at home and receive recipes that only use those ingredients. The app can also show users what ingredients they are missing from recipes and add them to a shopping list.</p>
-            <br>
-            <a href="#" class="btn btn-primary">get cook'n</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- FTC.gov Card-->
-      <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-          <img src="images/FTC.png" class="card-img-top" alt="FTC Seal">
-          <div class="card-body">
-            <h2 class="card-title">ftc.gov redesign</h2>
-            <p class="card-text">Redesign of the FTC.gov website to improve the user experience. The focus for the redesign was the website navigation and responsive design elements.</p>
-            <br>
-            <br>
-            <br>
-            <a href="#" class="btn btn-primary">be protected</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- ACHS Card -->
-      <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-        <div class="card">
-          <img src="images/ACHS.png" class="card-img-top" alt="Orange Tabby Cat">
-          <div class="card-body">
-            <h2 class="card-title">ACHS redesign</h2>
-            <p class="card-text">Redesign the ACHS website to improve user experience and highlight user actions of donating and volunteering and to improve responsive design elements.</p>
-            <br>
-            <br>
-            <a href="#" class="btn btn-primary">start helping</a>
-          </div>
-        </div>
-      </div>
-    </div><!-- Close row -->
-  </div><!-- Close container fluid -->
+  <br>
 
-<br>
-
-<footer>
+  <footer>
     <div class="block_element">
-        <img src="images\Giphy.png" alt="Picture of a file"><div class="inline-block"></div>
-        <img src="images\Gmail.png" alt="Gmail logo"><div class="inline-block"></div>
-        <img src="images\Dribble.png" alt="dribble logo"><div class="inline-block"></div>
-        <img src="images\Linkedin.png" alt="Linkedin logo"><div class="inline-block"></div> 
+      <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing"><img src="images\Giphy.png" alt="Resume download"></a><div class="inline-block"></div>
+      <a href="mailto:cat.penrod17@gmail.com"></a><img src="images\Gmail.png" alt="Gmail"></a><div class="inline-block"></div>
+      <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/"><img src="images\Linkedin.png" alt="Linkedin"></a><div class="inline-block"></div> 
     </div>
-</footer>
+  </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
+  </body>
 </html>
