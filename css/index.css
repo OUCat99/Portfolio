@@ -51,6 +51,7 @@ h5 {
   font-family: 'Open Sans', sans-serif;
   padding-top: 0%;
 }
+
 p {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -68,13 +69,40 @@ p {
   background-color: #758A96;
 }
 
+#cat {
+  margin-top: 50px;;
+  margin-left: 75px;
+  margin-bottom: 50px;
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  height: 250px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  }
+
+  #quote {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 0%;
+  height: auto;
+  width: auto;
+  align-content: center;
+  justify-content: left;
+  }
+
+.envelopeemail-icon {
+  height: 30px;
+  width: auto;
+}
+
 .grid-item-icons {
   margin-left: 100px;
   display: flex;
   align-content: space-around;
   align-items: center;
   justify-items: center;
-
 }
 
 /* Section Opening */
@@ -89,27 +117,7 @@ gap: 10px;
 .grid-item {
 padding: 10px;
 }
-#cat {
-margin-top: 50px;;
-margin-left: 75px;
-margin-bottom: 50px;
-height: auto;
-width: auto;
-max-width: 250px;
-height: 250px;
-align-content: center;
-justify-content: center;
-border-radius: 50%;
-}
-#quote {
-font-size: 30px;
-font-family: 'Open Sans', sans-serif;
-padding-top: 0%;
-height: auto;
-width: auto;
-align-content: center;
-justify-content: left;
-}
+
 /* Section resumeAbout */
 #resumeAbout {
 height: 100px;
@@ -128,17 +136,17 @@ vertical-align: bottom;
 
 /* NavBar */
 nav {
-  height: 92px;
+  height: 40px;
   width: 100%;
   background-color: #C8D9E3;
 }
 .inline-block {
   display: inline-block;
-  padding: 15px;
+  padding: 0px;
 }
 .block_element {
   float: right;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* unvisited link */
@@ -218,6 +226,11 @@ to {opacity:1 ;}
 
 /* portfolioGrid */
 
+.card-img-top {
+  height: 200px;
+  width: 200px;
+}
+
 .btn-primary {
 background-color: #758A96 !important;
 outline-color: #758A96 !important;
@@ -240,11 +253,15 @@ box-shadow: none !important;
     box-shadow: none !important;
     }
 
+.container-fluid {
+  margin-left: 75px;
+}
+    
 .cardContainer {
-margin-bottom: 25px;
+margin-bottom: 50px;
 }
 .card {
-margin: 175px auto;
+margin: 100px auto;
 }
 .card-img-top {
 max-width: 100%;
@@ -253,7 +270,7 @@ height: auto;
 
 
 footer {
-  height: 92px;
+  height: 40px;
   width: 100%;
   background-color: #C8D9E3;
   clear: both;
