@@ -13,7 +13,7 @@ h1 {
   padding-top: 2.5%;;
 }
 h2 {
-  font-size: 24px;
+  font-size: 26px !important;
   margin-left: 0px;
   font-family: "lust-display", serif;
   font-weight: 400;
@@ -225,10 +225,15 @@ to {opacity:1 ;}
 
 
 /* portfolioGrid */
-
-.card-img-top {
-  height: 200px;
-  width: 200px;
+#portfolio {
+  background-color: #FAFDFF;
+}
+.container-fluid {
+  background-color: #FAFDFF;
+}
+.card-text {
+  font-size: 16px !important;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .btn-primary {
@@ -236,6 +241,7 @@ background-color: #758A96 !important;
 outline-color: #758A96 !important;
 outline: none !important;
 box-shadow: none !important;
+align-items: bottom !important;
 }
 
 .btn-primary:hover, .btn-primary:active {
