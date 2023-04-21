@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <script 
       src="jquery-3.6.4.min.js">
@@ -21,74 +22,52 @@
   </head>
 
   <body>
-  <!--NavBar-->
-    <nav>
-      <div class="block_element">
-          <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing"><img src="images\Giphy.png" alt="Resume download"></a><div class="inline-block"></div>
-          <a href="mailto: cat.penrod17@gmail.com"><img src="images\Gmail.png" alt="Gmail"></a><div class="inline-block"></div>
-          <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/"><img src="images\Linkedin.png" alt="Linkedin"></a><div class="inline-block"></div> 
-      </div>
-    </nav>
   
-    <!--Title Block-->   
-    <h1>catherine penrod</h1>
-    <h4>researcher  |  UX/UI designer  |  communication expert</h4>
-  
-  <!--Opening Block-->   
-    <section id="opening">
-      <div class="grid-container">
+    <!--Hero-->
+    <header>
+      <div class="hero_content">
+        <div class="grid-container">
           <div class="grid-item"><img id="cat" src="images\penrod.jpg" alt="Image of Catherine Penrod">
           </div>
-          <div class="grid-item"><p id="quote">"My passion is using research, analysis, and design to solve complex business problems to create value."</p>
-          </div>
-      </div>
-    </section>
- 
-  <!--Actions-->
-    <section id="resumeAbout">
-    
-      <div class="block_element2">
-        
-        <div class="inline-block2">
-          <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing"><h4>view resume</h4></a>
-        </div>
-        <div class="inline-block2">
-            <img id="dwchevron" src="images/chevron.down.png" alt="Downward chevron">
-        </div>
-        
-        <div class="inline-block2">
-          <div class="popup" onclick="myFunction()"><h4>about cat</h4>
-            <span class="popuptext" id="myPopup">I am a User Experience Designer with a background in communication and business. I've spent the last 20 years helping others identify and solve business problems. I truly enjoy the interplay of research, analysis, and creativity that takes place in UX.  
-            <br>
-            <br>I like playing an active role in decision-making,  staying busy, experiencing variety, learning something new everyday, and overcoming challenges.
-            <br>
-            <br>Personally, I am a mom to two amazing daughters, and a wife to a husband who is my biggest champion. I enjoy the beauty of design that is all around us and believe in seeing the potential in everyone and everything. 
-            <br>
-            <br>I am also a bit of a grammar nerd.  </span>
-          </div>
-        </div>
-          <div class="inline-block2">
-            <img id="dwchevron2" src="images/chevron.down.png" alt="Downward chevron">
+          <div class="grid-item"> 
+            <h1>catherine penrod</h1>
+            <h4>researcher  |  UX/UI designer  |  communication expert</h4>
+            <p class="pt-2" id="quote">"My passion is using research, analysis, and design to solve complex business problems to create value."</p>
+            <a href="mailto: cat.penrod17@gmail.com"><img src="images\Gmail.png" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/"><img src="images\Linkedin.png" alt="Linkedin"></a>
+            <h6>
+              <a href="https://drive.google.com/file/d/1BNlaqIgqamrt92BntLuq6WJAsZjkh4VB/view?usp=sharing">view resume <img id="dwchevron" src="images/chevron.down.png" alt="Downward chevron"></a>
+              <a id="about-me">about cat<img id="dwchevron" src="images/chevron.down.png" alt="Downward chevron"></a>
+            </h6>
+            <div class="showMore" onclick="myFunction()">
+              <span class="popuptext" id="myPopup">I am a User Experience Designer with a background in communication and business. I've spent the last 20 years helping others identify and solve business problems. I truly enjoy the interplay of research, analysis, and creativity that takes place in UX.<br>
+              <br>I like playing an active role in decision-making,  staying busy, experiencing variety, learning something new everyday, and overcoming challenges.<br>
+              <br>Personally, I am a mom to two amazing daughters, and a wife to a husband who is my biggest champion. I enjoy the beauty of design that is all around us and believe in seeing the potential in everyone and everything. <br>
+              <br>I am also a bit of a grammar nerd.  </span>
+            </div>
           </div>
           <script>
-            // When the user clicks on div, open the popup
-            function myFunction() {
-              var popup = document.getElementById("myPopup");
-              popup.classList.toggle("show");
-            }
+            $(document).ready(function(){
+              $(".showMore").hide();
+              $("#about-me").click(function(){
+                  $(".showMore").toggle();
+                });  
+            });       
+          // When the user clicks on div, open the popup
+            // function myFunction() {
+            //   var popup = document.getElementById("myPopup");
+            //   popup.classList.toggle("show");
+            // }
           </script>  
-        </div>
-      
       </div>
-
-    </section>
-
+    </header>
+    <br>
   <!--Portfolio-->
 
   <section id="portfolio">
       <h3>portfolio</h3>
   </section>
-
+  <br>
   <div class="container-fluid">
       <div class="row">
         
@@ -151,6 +130,18 @@
       <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/"><img src="images\Linkedin.png" alt="Linkedin"></a><div class="inline-block"></div> 
     </div>
   </footer>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMPTEWPWN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GMPTEWPWN7');
+  </script>
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="js/index.js"></script>
