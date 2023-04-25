@@ -3,37 +3,81 @@ body, html {
   height: 100%;
 }
 
+/* Lust Text Book 
+font-family: "lust-text", serif;
+font-weight: 400;
+font-style: normal;
+
+Lust Text Italic
+font-family: "lust-text", serif;
+font-weight: 400;
+font-style: italic;
+
+Lust Text Bold 
+font-family: "lust-text", serif;
+font-weight: 700;
+font-style: normal;
+
+Lust Text Bold Italic
+font-family: "lust-text", serif;
+font-weight: 700;
+font-style: normal;
+
+Lust Sans Regular
+font-family: "lust-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Lust Sans Italic
+font-family: "lust-sans", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Lust Sans Bold
+font-family: "lust-sans", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Lust Sans Bold Italic
+font-family: "lust-sans", sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+
+
 /* Heading Styles */
 h1 {
   font-size: 125px;
   margin-left: 0px;
-  font-family: "lust-display", serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-top: 2.5%;;
+  font-family: "lust-text", serif;
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 5%;;
 }
 h2 {
   font-size: 26px !important;
   margin-left: 0px;
-  font-family: "lust-display", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "lust-text", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 h3 {
   font-size: 50px;
   margin-left: 85px;
-  font-family: "lust-display", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "lust-text", serif;
+  font-weight: 700;
+  font-style: italic;
   padding-top: 1%;
 }
 h4 {
-  font-size: 14px;
-  margin-left: 0px;
-  font-family: "lust", serif;
+  font-size: -8.5rem;
+  font-family: "lust-text", serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: medium italic;
+  margin-left: 0px;
   padding-top: 0%;
+
 }
 h6 {
   font-size: 14px;
