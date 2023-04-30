@@ -42,7 +42,7 @@
               <a href="mailto: cat.penrod17@gmail.com"><img class="envelopeemail-icon" src="images/envelopeemail-icon.png" alt="Email"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://www.linkedin.com/in/catherine-penrod-a9b1611a/" target="_blank"><img src="images\Linkedin.png" alt="Linkedin"></a>
             </h6>
-            <div class="showMore" onclick="myFunction()">
+            <div class="showMore" style="display: none;" onclick="myFunction()">
               <span class="popuptext" id="myPopup">I am a User Experience Designer with a background in communication and business. I've spent the last 20 years helping others identify and solve business problems. I truly enjoy the interplay of research, analysis, and creativity that takes place in UX.<br>
               <br>I like playing an active role in decision-making,  staying busy, experiencing variety, learning something new everyday, and overcoming challenges.<br>
               <br>Personally, I am a mom to two amazing daughters, and a wife to a husband who is my biggest champion. I enjoy the beauty of design that is all around us and believe in seeing the potential in everyone and everything. <br>
@@ -70,10 +70,10 @@
   <section id="portfolio">
     <h3>portfolio</h3>
     <!--castStudyCardsStart-->
-    <div class="container-fluid">
+    <div class="container">
         
       <div class="row">
-            
+        <div class="col-3">    
           <!--flewTheCoopCardStart-->
             <div class="card" style="width: 18rem;">
               <img src="images/flew_the_coop_card.png" class="card-img-top" alt="Woman on a swing at a waterfall">
@@ -83,8 +83,9 @@
                 <a href="flew_the_coop.html" class="btn btn-primary">escape now</a>
               </div>
             </div>
-    
+        </div>
             <!--what'sCook'nCardStart-->
+        <div class="col-3">
             <div class="card" style="width: 18rem;">
               <img src="images/what_cookn_card.png" class="card-img-top" alt="Logo for What's Cook'N app">
               <div class="card-body">
@@ -93,8 +94,9 @@
                 <a href="whats_cookn.html" class="btn btn-primary">get cook'n</a>
               </div>
             </div>
-    
+        </div>
             <!--ftcCardStart-->
+        <div class="col-3">
             <div class="card" style="width: 18rem;">
               <img src="images/ftc_card.png" class="card-img-top" alt="Federal Trade Commission Seal">
               <div class="card-body">
@@ -103,8 +105,9 @@
                 <a href="ftc_redesign.html" class="btn btn-primary">be protected</a>
               </div>
             </div>
-    
+        </div>
             <!--ACHSCardStart-->
+        <div class="col-3">
             <div class="card" style="width: 18rem;">
               <img src="images/ACHS_card.png" class="card-img-top" alt="Orange tabby cat">
               <div class="card-body">
@@ -113,8 +116,8 @@
                 <a href="ACHS_redesign.html" class="btn btn-primary">start helping</a>
               </div>
             </div>
-        
-        </div><!-- Close row -->
+        </div>
+      </div><!-- Close row -->
      
       </div><!-- Close container fluid -->
   
