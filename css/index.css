@@ -1,5 +1,5 @@
 body, html {
-  background-color: #FAFDFF;
+  background-color: #FAFDFF !important;
   height: 100%;
 }
 
@@ -124,6 +124,7 @@ p {
   align-content: center;
   justify-content: center;
   border-radius: 50%;
+  border-color: gray;
   }
 
   #quote {
@@ -137,7 +138,7 @@ p {
   }
 
 .envelopeemail-icon {
-  height: 30px;
+  height: 20px;
   width: auto;
 }
 
@@ -267,27 +268,17 @@ animation: fadeIn 1s
 }
 
 .btn-primary {
-background-color: #758A96 !important;
-outline-color: #758A96 !important;
-outline: none !important;
-box-shadow: none !important;
-align-items: bottom !important;
+background-color: #C8D9E3 !important;
+border-color: gray !important;
+font-weight: 500 !important;
+width: 15rem;
 }
 
 .btn-primary:hover, .btn-primary:active {
-  background-color: #CCB899 !important;
-  outline-color: #CCB899 !important;
+  background-color: #758A96  !important;
+  border-color: gray !important;
   color: black;
-  outline: none !important;
-  box-shadow: none !important;
   }
-
-.btn-primary:visited {
-    background-color: #AFA0A0 !important;
-    outline-color: #AFA0A0 !important;
-    outline: none !important;
-    box-shadow: none !important;
-    }
 
 .container-fluid {
   background-color: #FAFDFF;
