@@ -176,6 +176,7 @@ p {
 .ftcSketches {
   max-width: 200px;
   max-height: auto;
+  border: #555;
 }
 
 .ftcWireframes {
